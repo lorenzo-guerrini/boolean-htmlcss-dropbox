@@ -4,24 +4,61 @@
     box-sizing: border-box;
 }
 
-/*Elementi generali*/
+body {
+    background-color: black;
+}
+
+/*larghezza elementi*/
+
+.large-width {
+
+}
+
+.medium-width {
+
+}
+
+/*Comportamento collegamenti*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Bottoni*/
 
 .button {
 
 }
 
 .button .blue {
-
+    background-color: #3A61F8;
+    color: white;
 }
 
 .button .white {
-
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 /*Header*/
 
 header .container {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
 
+.logo {
+    float: left;
+    display: inline-block;
 }
 
 .logo img {
@@ -29,19 +66,29 @@ header .container {
 }
 
 header nav {
-
+    display: inline-block;
 }
 
 .nav-left {
-
+    float: left;
 }
 
 .nav-right {
-
+    float: right;
 }
 
-.nav button {
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
 
+header .button {
+    float: right;
 }
 
 /*Prima sezione*/
+
+#first-section {
+    background-color: #BACEE5;
+    padding-top: 60px;
+}
