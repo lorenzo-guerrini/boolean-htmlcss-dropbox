@@ -1,21 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Provare a rifare tutto con le percentuali*/
 
 /*larghezza elementi*/
 
 .large-width {
-
+    width: 1000px;
+    margin: auto;
 }
 
 .medium-width {
+    width: 800px;
+    margin: auto;
+}
 
+/*Testo*/
+
+.title {
+    font-weight: bold;
+}
+
+section .title {
+    font-size: 30px;
 }
 
 /*Comportamento collegamenti*/
@@ -32,15 +54,15 @@ a:hover {
 /*Bottoni*/
 
 .button {
-
+    padding: 0.2em 1em;
 }
 
-.button .blue {
+.button.blue {
     background-color: #3A61F8;
     color: white;
 }
 
-.button .white {
+.button.white {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -52,21 +74,26 @@ header .container {
     background-color: white;
     height: 60px;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
+    min-width: 960px;
+    border-bottom: 1px solid gray;
+    z-index: 999;
 }
 
 .logo {
     float: left;
     display: inline-block;
+    margin-right: 15px;
 }
 
 .logo img {
-
+    width: 100px;
 }
 
 header nav {
     display: inline-block;
+
 }
 
 .nav-left {
@@ -79,11 +106,12 @@ header nav {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header .button {
     float: right;
+    margin-left: 15px;
 }
 
 /*Prima sezione*/
@@ -91,4 +119,123 @@ header .button {
 #first-section {
     background-color: #BACEE5;
     padding-top: 60px;
+}
+
+#first-section .large-width {
+    margin-top: 100px;
+}
+
+#first-section .title{
+    font-size: 50px;
+}
+
+#jumbo {
+    position: relative;
+    top: 50px;
+}
+
+#jumbo-img {
+    float: right;
+    width: 650px;
+}
+
+#jumbo-text {
+    float: left;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/*Seconda sezione*/
+
+#second-section {
+    padding-top: 150px;
+}
+
+#second-section .title {
+    margin-bottom: 50px;
+}
+
+#fatturazioni {
+    margin-bottom: 30px;
+}
+
+.plans {
+    margin-top: 10px;
+}
+
+.plan {
+    float: left;
+    border: 1px solid gray;
+    margin-bottom: 5%;
+}
+
+#second-plan { /*Per distanziare i tre piani tra loro*/
+    margin: 0 5%;
+}
+
+.plan.long {
+    width: 30%;
+    height: 800px;
+}
+
+.plan.large {
+    width: 100%;
+}
+
+.plan-container {
+    padding: 20px
+}
+
+.plan-type {
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 8px;
+}
+
+.plan-type.single::before {
+
+}
+
+.plan-type.team::before {
+
+}
+
+.plan-title {
+    font-weight: bold;
+}
+
+.plan-price {
+    font-weight: bold;
+}
+
+.plan-price span {
+    color: gray;
+    font-weight: lighter;
+}
+
+.plan-info {
+    margin-top: 25px;
+}
+
+.plan-functions {
+    margin-bottom: 50px;
+}
+
+#enterprise-info {
+    font-weight: bold;
+}
+
+.plan.large .plan-container {
+    position: relative;
+}
+
+.plan.large p {
+    margin-top: 20px;
+}
+
+.plan.large a {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
