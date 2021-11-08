@@ -15,6 +15,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+hr {
+    width: 50px;
+}
+
 /*Quando un elemento float si trova in mezzo ad altri due usare questo per distanziarli*/
 .element-center {
     margin: 0 5%;
@@ -48,6 +53,9 @@ section .title {
     font-size: 30px;
 }
 
+.purple {
+    color: #561C2F;
+}
 /*Comportamento collegamenti*/
 
 a {
@@ -124,15 +132,15 @@ header .button {
 
 /*Prima sezione*/
 
-#first-section {
+#section-one {
     padding-top: 60px;
 }
 
-#first-section .large-width {
+#section-one .large-width {
     margin-top: 100px;
 }
 
-#first-section .title{
+#section-one .title{
     font-size: 50px;
 }
 
@@ -279,3 +287,101 @@ header .button {
 
 /*Quarta sezione*/
 
+#section-four {
+    height: 300px;
+}
+
+.partners-container {
+    width: 100%;
+    margin-bottom: 300px;
+}
+.partners {
+    float: left;
+    width: 30%;
+    height: 30vw;
+}
+
+.partner {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+.partner:hover {
+    border: 8px solid rgba(255, 255, 255, 0.5);
+}
+
+.partner img {
+    position: absolute;
+    width: 50%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: invert(100%);
+
+}
+#partner-designit {
+    background-color: #ADD09E;
+}
+
+#partner-asu {
+    background-color: #561C2F;
+}
+
+#partner-uf {
+    background-color: #4E8FC9;
+}
+
+#partner-topps {
+    background-color: #E2442D;
+}
+
+#partner-wbr {
+    background-color: #BB332B;
+}
+
+#partner-hearst {
+    background-color: #BACEE5;
+}
+
+#partner-lonely {
+    background-color: #1F297C;
+}
+
+#partner-clearchannel {
+    background-color: #F5D850;
+}
+
+#partners-description {
+    float: left;
+    width: 40%;
+    height: 30vw;
+    background-color: #F5F5F5;
+}
+
+#description-container {
+    padding: 8%;
+}
+
+#partners-description img {
+    width: 25%;
+}
+
+/*Quinta sezione*/
+
+#section-five .medium-width{
+    padding-top: 350px;
+    padding-bottom: 100px;
+}
+
+#section-five .title {
+    float: left;
+    width: 50%;
+}
+
+#section-five .button {
+    float: right;
+}
