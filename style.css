@@ -15,7 +15,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
+/*Quando un elemento float si trova in mezzo ad altri due usare questo per distanziarli*/
+.element-center {
+    margin: 0 5%;
+}
 /*Provare a rifare tutto con le percentuali*/
 
 /*larghezza elementi*/
@@ -29,6 +32,10 @@ body {
     width: 800px;
     margin: auto;
     padding-top: 70px;
+}
+
+.light-blue {
+    background-color: #BACEE5;
 }
 
 /*Testo*/
@@ -118,7 +125,6 @@ header .button {
 /*Prima sezione*/
 
 #first-section {
-    background-color: #BACEE5;
     padding-top: 60px;
 }
 
@@ -169,10 +175,6 @@ header .button {
     float: left;
     border: 1px solid gray;
     margin-bottom: 5%;
-}
-
-#second-plan { /*Per distanziare i tre piani tra loro*/
-    margin: 0 5%;
 }
 
 .plan.long {
@@ -255,3 +257,25 @@ header .button {
 #find-partner-info .title {
     font-size: 17px;
 }
+
+/*Terza Sezione*/
+
+.operation {
+    float: left;
+    width: 30%;
+}
+
+.operation img {
+    width: 100%;
+}
+
+.operation .title {
+    font-size: 20px;
+}
+
+.operation p {
+
+}
+
+/*Quarta sezione*/
+
