@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -19,6 +23,7 @@ body {
 hr {
     width: 50px;
 }
+
 
 /*Quando un elemento float si trova in mezzo ad altri due usare questo per distanziarli*/
 .element-center {
@@ -384,4 +389,57 @@ header .button {
 
 #section-five .button {
     float: right;
+}
+
+/*Sesta sezione*/
+#section-six .title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+
+#faq {
+    margin-bottom: 100px;
+}
+.question {
+    padding: 10px 0;
+    border-bottom: 1px solid gray;
+}
+.question:hover .question-answer {
+    display: block;
+}
+
+.question-answer {
+    display: none;
+}
+
+.question-title {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer .large-width {
+    height: 400px;
+}
+
+footer .clearfix {
+    padding: 80px 0;
+}
+
+.footer-links {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer-links a {
+    color: white;
+}
+
+footer .language-selector {
+    margin: 40px 0;
 }
