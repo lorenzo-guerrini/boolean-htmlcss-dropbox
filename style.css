@@ -28,6 +28,7 @@ body {
 .medium-width {
     width: 800px;
     margin: auto;
+    padding-top: 70px;
 }
 
 /*Testo*/
@@ -238,4 +239,19 @@ header .button {
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+#find-partner img {
+    width: 55%;
+    float: left;
+}
+
+#find-partner-info {
+    float: left;
+    width: 45%;
+    padding: 5%;
+}
+
+#find-partner-info .title {
+    font-size: 17px;
 }
