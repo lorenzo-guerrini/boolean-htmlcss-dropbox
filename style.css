@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style-type: none;
 }
@@ -24,6 +28,67 @@ hr {
     width: 50px;
 }
 
+input[type="radio"], label {
+    vertical-align: middle;
+}
+
+/* A seguire i radio custom*/
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+ .radio-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border: 1px solid #CFCFD2;
+    border-radius: 50%;
+}
+
+.radio-container input:checked ~ .radio-custom {
+    background-color: #3A61F8;
+    border: 1px solid #3A61F8;
+}
+
+  /* Crea il cerchio interno, nascosto di default */
+.radio-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+  /* Stile del cerchio interno */
+.radio-container .radio-custom:after {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    background: white;
+}
+
+  /* Mostra il cerchio interno quando selezionato */
+.radio-container input:checked ~ .radio-custom:after {
+display: block;
+}
+  
+  /* Nasconde il pulsante radio di default */
+.radio-container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+  
 
 /*Quando un elemento float si trova in mezzo ad altri due usare questo per distanziarli*/
 .element-center {
@@ -54,8 +119,20 @@ hr {
     font-weight: bold;
 }
 
-section .title {
+.title.medium {
     font-size: 30px;
+}
+
+.title.small {
+
+}
+
+.text.small {
+    font-size: 11px;
+}
+
+.text.medium {
+    font-size: 12px;
 }
 
 .purple {
@@ -68,14 +145,11 @@ a {
     color: black;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /*Bottoni*/
 
 .button {
-    padding: 0.2em 1em;
+    padding: 0.5em 1.5em;
+    display: inline-block;
 }
 
 .button.blue {
@@ -89,32 +163,55 @@ a:hover {
     border: 1px solid black;
 }
 
+.button:hover {
+    box-shadow: inset 2px 2px rgba(255, 255, 255, 0.5);
+}
+
 /*Header*/
 
 header .container {
     background-color: white;
     height: 60px;
     width: 100%;
-    padding: 20px;
+    padding: 15px 20px;
     position: fixed;
     min-width: 960px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #CFCFD2;
     z-index: 999;
+}
+
+header .logo, header ul, header a {
+    vertical-align: sub;
+}
+
+header ul a:hover {
+    padding-bottom: 22px;
+    border-bottom: 2px solid #3A61F8;
+}
+
+header .logo, header ul {
+    margin-top: 3px;
+}
+
+header .button {
+    position: relative;
+    top: 0;
 }
 
 .logo {
     float: left;
     display: inline-block;
     margin-right: 15px;
+    width: 100px;
 }
 
 .logo img {
-    width: 100px;
+    width: 100%;
 }
 
 header nav {
     display: inline-block;
-
+    width: calc(100% - 115px);
 }
 
 .nav-left {
@@ -142,11 +239,11 @@ header .button {
 }
 
 #section-one .large-width {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 #section-one .title{
-    font-size: 50px;
+    font-size: 58px;
 }
 
 #jumbo {
@@ -166,18 +263,39 @@ header .button {
     overflow: hidden;
 }
 
+#jumbo-text i {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#jumbo-text p {
+    margin-bottom: 25px;
+}
+
+#jumbo-text .button {
+    margin-bottom: 8px;
+}
+
 /*Seconda sezione*/
 
-#second-section {
-    padding-top: 150px;
+#second-section .medium-width{
+    padding-top: 140px;
 }
 
 #second-section .title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #fatturazioni {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+#fatturazioni label {
+    display: inline-block;
+}
+
+#fatturazioni label:nth-child(2) {
+    margin-left: 10px;
 }
 
 .plans {
@@ -186,7 +304,7 @@ header .button {
 
 .plan {
     float: left;
-    border: 1px solid gray;
+    border: 1px solid #CFCFD2;
     margin-bottom: 5%;
 }
 
@@ -204,7 +322,7 @@ header .button {
 }
 
 .plan-type {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #CFCFD2;
     text-align: center;
     padding: 8px;
 }
@@ -326,7 +444,6 @@ header .button {
     right: 0;
     bottom: 0;
     filter: invert(100%);
-
 }
 #partner-designit {
     background-color: #ADD09E;
