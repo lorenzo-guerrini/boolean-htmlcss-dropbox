@@ -41,7 +41,7 @@ input[type="radio"], label {
     cursor: pointer;
 }
 
- .radio-custom {
+.radio-custom {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,14 +57,14 @@ input[type="radio"], label {
     border: 1px solid #3A61F8;
 }
 
-  /* Crea il cerchio interno, nascosto di default */
+/* Crea il cerchio interno, nascosto di default */
 .radio-custom:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-  /* Stile del cerchio interno */
+/* Stile del cerchio interno */
 .radio-container .radio-custom:after {
     top: 0px;
     left: 0px;
@@ -77,12 +77,12 @@ input[type="radio"], label {
     background: white;
 }
 
-  /* Mostra il cerchio interno quando selezionato */
+/* Mostra il cerchio interno quando selezionato */
 .radio-container input:checked ~ .radio-custom:after {
 display: block;
 }
   
-  /* Nasconde il pulsante radio di default */
+/* Nasconde il pulsante radio di default */
 .radio-container input {
 position: absolute;
 opacity: 0;
@@ -94,7 +94,6 @@ cursor: pointer;
 .element-center {
     margin: 0 5%;
 }
-/*Provare a rifare tutto con le percentuali*/
 
 /*larghezza elementi*/
 
@@ -124,7 +123,7 @@ cursor: pointer;
 }
 
 .title.small {
-
+    font-size: 20px;
 }
 
 .text.small {
@@ -143,6 +142,12 @@ cursor: pointer;
 a {
     text-decoration: none;
     color: black;
+}
+
+.blue-link {
+    color: #3A61F8;
+    text-decoration: underline;
+    display: inline-block;
 }
 
 /*Bottoni*/
@@ -282,12 +287,9 @@ header .button {
     padding-top: 140px;
 }
 
-#second-section .title {
-    margin-bottom: 40px;
-}
-
 #fatturazioni {
-    margin-bottom: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #fatturazioni label {
@@ -318,50 +320,82 @@ header .button {
 }
 
 .plan-container {
-    padding: 20px
+    padding: 20px;
+    position: relative;
 }
 
 .plan-type {
     border-bottom: 1px solid #CFCFD2;
     text-align: center;
     padding: 8px;
-}
-
-.plan-type.single::before {
-
-}
-
-.plan-type.team::before {
-
-}
-
-.plan-title {
-    font-weight: bold;
+    font-size: 13px;
 }
 
 .plan-price {
     font-weight: bold;
+    margin-top: 10px;
+    line-height: 20px;
 }
 
 .plan-price span {
     color: gray;
     font-weight: lighter;
+    font-size: 11px;
 }
 
 .plan-info {
     margin-top: 25px;
 }
 
+.plan-info i {
+    position: absolute;
+    left: 20px;
+    margin-top: 2px;
+}
+
+.plan-users, .plan-storage, .plan-functions {
+    margin-bottom: 20px;
+}
+
 .plan-functions {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+}
+
+.plan-info a.button {
+    padding: 0.5em 28px;
+    margin-bottom: 20px;
+}
+
+.plan .blue-link {
+    margin-bottom: 20px;
+}
+
+.plan hr {
+    margin-bottom: 25px;
+}
+
+.move-right, .highlight {
+    padding-left: 17px;
+}
+
+.highlights-title {
+    font-weight: bold;
+}
+
+.highlight {
+    margin: 20px 0;
+}
+
+.highlight i {
+    color: #3A61F8;
 }
 
 #enterprise-info {
     font-weight: bold;
 }
 
-.plan.large .plan-container {
-    position: relative;
+.plan.large .title {
+    margin-bottom: 10px;
 }
 
 .plan.large p {
@@ -372,8 +406,12 @@ header .button {
     position: absolute;
     top: 20px;
     right: 20px;
+    padding: 0.5em 50px;
 }
 
+#find-partner {
+    margin-top: 70px;
+}
 #find-partner img {
     width: 55%;
     float: left;
@@ -389,11 +427,21 @@ header .button {
     font-size: 17px;
 }
 
+#find-partner-info p {
+    margin: 20px 0;
+    line-height: 20px;
+}
+
 /*Terza Sezione*/
+
+.business-operations {
+    margin-top: 30px;
+}
 
 .operation {
     float: left;
     width: 30%;
+    margin-bottom: 80px;
 }
 
 .operation img {
@@ -402,6 +450,7 @@ header .button {
 
 .operation .title {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .operation p {
@@ -414,10 +463,19 @@ header .button {
     height: 300px;
 }
 
+#section-four .title {
+    margin-bottom: 15px;
+}
+
+#section-four .blue-link {
+    margin-bottom: 35px;
+}
+
 .partners-container {
     width: 100%;
     margin-bottom: 300px;
 }
+
 .partners {
     float: left;
     width: 30%;
@@ -490,12 +548,17 @@ header .button {
 
 #partners-description img {
     width: 25%;
+    margin-bottom: 20px;
+}
+
+#partners-description p {
+    margin: 35px 0;
 }
 
 /*Quinta sezione*/
 
 #section-five .medium-width{
-    padding-top: 350px;
+    padding-top: 400px;
     padding-bottom: 100px;
 }
 
@@ -506,27 +569,44 @@ header .button {
 
 #section-five .button {
     float: right;
+    padding: 0.5em 50px;
+    border: none;
 }
 
 /*Sesta sezione*/
 #section-six .title {
+    margin-top: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #CFCFD2;
 }
 
 #faq {
     margin-bottom: 100px;
 }
 .question {
-    padding: 10px 0;
-    border-bottom: 1px solid gray;
+    padding: 25px 0;
+    border-bottom: 1px solid #CFCFD2;
+    position: relative;
 }
+
+.question i {
+    position: absolute;
+    right: 30px;
+}
+
 .question:hover .question-answer {
     display: block;
 }
 
+.question:hover i {
+    transform: rotate(180deg);
+    transition-delay: 0;
+    transition: all 0.6s;
+}
+
 .question-answer {
     display: none;
+    margin-top: 20px;
 }
 
 .question-title {
@@ -550,7 +630,15 @@ footer .clearfix {
 
 .footer-links {
     float: left;
-    margin-left: 30px;
+    margin-right: 90px;
+}
+
+.footer-links .title {
+    margin-bottom: 15px;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
 }
 
 .footer-links a {
@@ -559,4 +647,5 @@ footer .clearfix {
 
 footer .language-selector {
     margin: 40px 0;
+    color: gray;
 }
