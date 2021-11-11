@@ -201,6 +201,8 @@ header .logo, header ul {
 header .button {
     position: relative;
     top: 0;
+    float: right;
+    margin-left: 15px;
 }
 
 .logo {
@@ -231,10 +233,6 @@ nav ul li {
     margin: 0 15px;
 }
 
-header .button {
-    float: right;
-    margin-left: 15px;
-}
 
 /*Prima sezione*/
 
