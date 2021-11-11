@@ -189,6 +189,10 @@ header .logo, header ul, header a {
     vertical-align: sub;
 }
 
+header ul a {
+    padding: 30px 0;
+}
+
 header ul a:hover {
     padding-bottom: 22px;
     border-bottom: 2px solid #3A61F8;
@@ -250,7 +254,7 @@ nav ul li {
 
 #jumbo {
     position: relative;
-    top: 50px;
+    bottom: -50px;
 }
 
 #jumbo-img {
@@ -533,6 +537,7 @@ nav ul li {
     width: 40%;
     height: 30vw;
     background-color: #F5F5F5;
+    overflow: auto;
 }
 
 #description-container {
@@ -636,6 +641,10 @@ footer .clearfix {
 
 .footer-links a {
     color: white;
+}
+
+footer hr {
+    width: 100px;
 }
 
 footer .language-selector {
