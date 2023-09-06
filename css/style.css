@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
+/* Layout */
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +29,12 @@ hr {
   width: 50px;
 }
 
+/* Radio */
 input[type="radio"],
 label {
   vertical-align: middle;
 }
 
-/* A seguire i radio custom*/
 .radio-container {
   display: block;
   position: relative;
@@ -58,14 +59,12 @@ label {
   border: 1px solid #3a61f8;
 }
 
-/* Crea il cerchio interno, nascosto di default */
 .radio-custom:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Stile del cerchio interno */
 .radio-container .radio-custom:after {
   top: 0px;
   left: 0px;
@@ -78,24 +77,19 @@ label {
   background: white;
 }
 
-/* Mostra il cerchio interno quando selezionato */
 .radio-container input:checked ~ .radio-custom:after {
   display: block;
 }
 
-/* Nasconde il pulsante radio di default */
 .radio-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/*Quando un elemento float si trova in mezzo ad altri due usare questo per distanziarli*/
 .element-center {
   margin: 0 5%;
 }
-
-/*larghezza elementi*/
 
 .large-width {
   width: 1000px;
@@ -112,8 +106,7 @@ label {
   background-color: #bacee5;
 }
 
-/*Testo*/
-
+/* Text */
 .title {
   font-weight: bold;
 }
@@ -137,7 +130,6 @@ label {
 .purple {
   color: #561c2f;
 }
-/*Comportamento collegamenti*/
 
 a {
   text-decoration: none;
@@ -150,8 +142,7 @@ a {
   display: inline-block;
 }
 
-/*Bottoni*/
-
+/* Buttons */
 .button {
   padding: 0.5em 1.5em;
   display: inline-block;
@@ -173,7 +164,6 @@ a {
 }
 
 /*Header*/
-
 header .container {
   background-color: white;
   height: 60px;
@@ -240,8 +230,7 @@ nav ul li {
   margin: 0 15px;
 }
 
-/*Prima sezione*/
-
+/* First Section */
 #section-one {
   padding-top: 60px;
 }
@@ -284,8 +273,7 @@ nav ul li {
   margin-bottom: 8px;
 }
 
-/*Seconda sezione*/
-
+/* Second section */
 #second-section .medium-width {
   padding-top: 140px;
 }
@@ -418,6 +406,7 @@ nav ul li {
 #find-partner {
   margin-top: 70px;
 }
+
 #find-partner img {
   width: 55%;
   float: left;
@@ -438,8 +427,7 @@ nav ul li {
   line-height: 20px;
 }
 
-/*Terza Sezione*/
-
+/* Third section */
 .business-operations {
   margin-top: 30px;
 }
@@ -459,8 +447,7 @@ nav ul li {
   margin-bottom: 20px;
 }
 
-/*Quarta sezione*/
-
+/* Fourth section */
 #section-four {
   height: 300px;
 }
@@ -505,6 +492,7 @@ nav ul li {
   bottom: 0;
   filter: invert(100%);
 }
+
 #partner-designit {
   background-color: #add09e;
 }
@@ -558,8 +546,7 @@ nav ul li {
   margin: 35px 0;
 }
 
-/*Quinta sezione*/
-
+/* Fifth section */
 #section-five .medium-width {
   padding-top: 400px;
   padding-bottom: 100px;
@@ -576,7 +563,7 @@ nav ul li {
   border: none;
 }
 
-/*Sesta sezione*/
+/* Sixth section */
 #section-six .title {
   margin-top: 30px;
   padding-bottom: 30px;
@@ -586,6 +573,7 @@ nav ul li {
 #faq {
   margin-bottom: 100px;
 }
+
 .question {
   padding: 25px 0;
   border-bottom: 1px solid #cfcfd2;
@@ -617,7 +605,6 @@ nav ul li {
 }
 
 /*Footer*/
-
 footer {
   background-color: black;
   color: white;
